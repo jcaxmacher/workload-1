@@ -1,3 +1,12 @@
+variable "account_id" {
+  description = "The AWS Account ID this workspace will target"
+}
+
+variable "role_name" {
+  description = "The name of the IAM role to assume"
+  default     = "OrganizationAccountAccessRole"
+}
+
 variable "region" {
   description = "AWS region"
   default     = "us-west-1"
